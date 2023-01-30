@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Mission4Assignment_1_</RootNamespace>
+    <ApplicationIcon>favicon (1).ico</ApplicationIcon>
+  </PropertyGroup>
+
+</Project>
