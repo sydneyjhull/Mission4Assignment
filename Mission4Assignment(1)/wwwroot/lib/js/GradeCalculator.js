@@ -1,10 +1,10 @@
 ﻿$("#btnSubmit").click(function () {
-    let assignments = $("assignments").val();
-    let projects = $("projects").val();
-    let quizzes = $("quizzes").val();
-    let midterm = $("midterm").val();
-    let final = $("final").val();
-    let intex = $("intex").val();
+    let assignments = $("#assignments").val();
+    let projects = $("#projects").val();
+    let quizzes = $("#quizzes").val();
+    let midterm = $("#midterm").val();
+    let final = $("#final").val();
+    let intex = $("#intex").val();
     let grade = assignments + projects + quizzes + midterm + final + intex;
 
     if (grade >= 94) {
