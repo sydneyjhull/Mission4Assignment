@@ -1,46 +1,43 @@
-﻿document.getElementById("btnSubmit").addEventListener("click", function () {
-    if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 94) {
-        print("You have an A in the class")
+﻿$("#btnSubmit").click(function () {
+    let assignments = $("assignments").val();
+    let projects = $("projects").val();
+    let quizzes = $("quizzes").val();
+    let midterm = $("midterm").val();
+    let final = $("final").val();
+    let intex = $("intex").val();
+    let grade = assignments + projects + quizzes + midterm + final + intex;
+
+    if (grade >= 94) {
+        alert("You have an A in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 90) {
+    else if (grade >= 90) {
         print("You have an A- in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 87) {
+    else if (grade >= 87) {
         print("You have a B+ in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 84) {
+    else if (grade >= 84) {
         print("You have a B in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 80) {
+    else if (grade >= 80) {
         print("You have a B- in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 77) {
+    else if (grade >= 77) {
         print("You have a C+ in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 74) {
+    else if (grade >= 74) {
         print("You have a C in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 70) {
+    else if (grade >= 70) {
         print("You have a C- in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 67) {
+    else if (grade >= 67) {
         print("You have a D+ in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 64) {
+    else if (grade >= 64) {
         print("You have a D in the class")
     }
-    else if ((document.getElementById("assignments") + document.getElementById("projects") + document.getElementById("quizzes")
-        + document.getElementById("midterm") + document.getElementById("final") + document.getElementById("intext")) >= 60) {
+    else if (grade >= 60) {
         print("You have a D- in the class")
     }
     else {
