@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link href="css/StyleSheet.css" rel="stylesheet" class="center" />
+    <link rel="icon" href="img/icon.png" />
+    <script src="lib/js/bootstrap.js"></script>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>

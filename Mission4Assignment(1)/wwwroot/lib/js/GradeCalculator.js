@@ -23,7 +23,7 @@
     let grade = percentAssignments + percentProjects + percentQuizzes + percentMidterm + percentFinal + percentIntex;
 
 
-    //print results
+    //matching to the string
     if (grade >= 94) {
         letterGrade = "A";
     }
@@ -61,6 +61,7 @@
         letterGrade = "E";
     }
 
+    //print results
     let finalString = "You got a(n) " + letterGrade + " in the class."
     $("#result").html(finalString)
 })  
