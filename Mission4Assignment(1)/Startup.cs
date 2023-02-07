@@ -22,6 +22,7 @@ namespace Mission4Assignment_1_
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //if the environment is set to development and it's not working, it'll pull up a page that is geared towards developers
             if (env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();

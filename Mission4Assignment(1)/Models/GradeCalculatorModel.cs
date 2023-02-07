@@ -8,6 +8,7 @@ namespace Mission4Assignment_1_.Models
 {
     public class GradeCalculatorModel
     {
+        //showing that the input is a required field and to pull up an error message if it's not a valid number
         [Required]
         [Range(0, 100, ErrorMessage = "Assignments score must be between 0 and 100")]
         //getters and setters
