@@ -12,19 +12,17 @@
     <label>Assignments:</label>
     <input id="assignments" asp-for="Assignments" /> <br />
     <label>Group Project:</label>
-    <input id="projects" asp-for="Projects"/><br />
+    <input id="projects" asp-for="Projects" /><br />
     <label>Quizzes:</label>
-    <input id="quizzes" asp-for="Quizzes"/><br />
+    <input id="quizzes" asp-for="Quizzes" /><br />
     <label>Midterm Exam:</label>
-    <input id="midterm" asp-for="Midterm"/><br />
+    <input id="midterm" asp-for="Midterm" /><br />
     <label>Final Exam:</label>
-    <input id="final" asp-for="Final"/><br />
+    <input id="final" asp-for="Final" /><br />
     <label>INTEX:</label>
-    <input id="intex" asp-for="Intex"/><br /><br />
+    <input id="intex" asp-for="Intex" /><br /><br />
     <input id="btnSubmit" type="submit" value="Submit" />
 
     <div asp-validation-summary="All"></div>
+    <p id="result"></p>
 </form>
-
-<p id="result"></p>
-<script src="lib/js/GradeCalculator.js"></script>
